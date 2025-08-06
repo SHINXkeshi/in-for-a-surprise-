@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>A Letter for MY QUEEN MJ</title>
+  <title>Heart Letter for MJ</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -75,6 +75,7 @@
       font-size: 16px;
       color: #5c3b2e;
       z-index: 2;
+      line-height: 1.5;
     }
 
     .crown {
@@ -116,17 +117,21 @@
 <body>
 
   <p>
-    Hey MJ my love ;), <span class="letter-trigger" onclick="showLetter()">click this lil thing</span> if you wanna feel butterflies 🥺💘
+    Hey MJ, <span class="letter-trigger" onclick="showLetter()">click this lil thing</span> if you wanna feel butterflies 🥺💘
   </p>
 
   <div class="letter-container" id="container">
     <div class="heart-letter" id="letter">
       <div class="crown">👑</div>
       <div class="letter-content">
-        My precious MJ, <br><br>
-        You're the crown that sits gently on my heart. You make my world so warm and sparkly hehe. I wanna say im proud of your performance in Kuratsa..even though I didnt get to see it myself, but I know that you did great. Please know your hardworks and efforts are not in vain..And if y'all did a great job? THEN CONGRATULATIONS IM SO PROUD OF YA :3....I really got nthn much to say hehe sooo I LOVE YAA ;) <br><br>
-        Always yours,<br>
-        Seb 💖
+        My precious MJ,<br><br>
+        You're the crown that sits gently on my heart. You make my world so warm and sparkly hehe. 💫<br><br>
+        I wanna say I'm proud of your performance in Kuratsa... even though I didn't get to see it myself, I just know you did great. 💃🏻<br><br>
+        Please know your hard works and efforts are not in vain...<br><br>
+        And if y'all did a great job?<br>
+        THEN CONGRATULATIONS!! 🎉 I'M SO PROUD OF YA :3<br><br>
+        I really got nothin' much to say hehe sooo...<br>
+        **I LOVE YAA ;)** 💗
       </div>
       <button class="close-btn" onclick="hideLetter()">✕</button>
     </div>
