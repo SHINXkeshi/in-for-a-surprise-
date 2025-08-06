@@ -1,1 +1,146 @@
-# in-for-a-surprise-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A Letter for MY QUEEN MJ</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #fff7f0;
+      color: #333;
+    }
+
+    .letter-trigger {
+      color: #d4a373;
+      text-decoration: underline;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .letter-trigger:hover {
+      color: #9c6644;
+    }
+
+    .letter-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .heart-letter {
+      position: relative;
+      width: 300px;
+      height: 270px;
+      background: #ffe0ec;
+      transform: rotate(-45deg);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      animation: pop 0.6s ease;
+    }
+
+    .heart-letter::before,
+    .heart-letter::after {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 270px;
+      background: #ffe0ec;
+      border-radius: 50%;
+    }
+
+    .heart-letter::before {
+      top: -150px;
+      left: 0;
+    }
+
+    .heart-letter::after {
+      left: 150px;
+      top: 0;
+    }
+
+    .letter-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: rotate(45deg) translate(-50%, -50%);
+      width: 80%;
+      text-align: center;
+      font-size: 16px;
+      color: #5c3b2e;
+      z-index: 2;
+    }
+
+    .crown {
+      font-size: 30px;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: rotate(45deg) translateX(-50%);
+    }
+
+    .close-btn {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      transform: rotate(45deg);
+      background: none;
+      border: none;
+      font-size: 18px;
+      color: #555;
+      cursor: pointer;
+    }
+
+    .close-btn:hover {
+      color: #222;
+    }
+
+    @keyframes pop {
+      0% {
+        transform: scale(0.5) rotate(-45deg);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1) rotate(-45deg);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <p>
+    Hey MJ my love ;), <span class="letter-trigger" onclick="showLetter()">click this lil thing</span> if you wanna feel butterflies 🥺💘
+  </p>
+
+  <div class="letter-container" id="container">
+    <div class="heart-letter" id="letter">
+      <div class="crown">👑</div>
+      <div class="letter-content">
+        My precious MJ, <br><br>
+        You're the crown that sits gently on my heart. You make my world so warm and sparkly hehe. I wanna say im proud of your performance in Kuratsa..even though I didnt get to see it myself, but I know that you did great. Please know your hardworks and efforts are not in vain..And if y'all did a great job? THEN CONGRATULATIONS IM SO PROUD OF YA :3....I really got nthn much to say hehe sooo I LOVE YAA ;) <br><br>
+        Always yours,<br>
+        Seb 💖
+      </div>
+      <button class="close-btn" onclick="hideLetter()">✕</button>
+    </div>
+  </div>
+
+  <script>
+    function showLetter() {
+      document.getElementById('container').style.display = 'flex';
+    }
+
+    function hideLetter() {
+      document.getElementById('container').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
